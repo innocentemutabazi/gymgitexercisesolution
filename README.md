@@ -213,9 +213,9 @@ remote:
 To https://github.com/innocentemutabazi/git-exercises.git
 
 
-![Screenshot from 2024-04-22 14-29-02](https://github.com/innocentemutabazi/gymgitexercisesolution/assets/159420918/06e9c217-45e1-4b25-9974-d07c531f8e07)
 
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 Branch 'ft/bundle-2' set up to track remote branch 'ft/bundle-2' from 'origin'.
 thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$
 ```
+![Screenshot from 2024-04-22 14-29-02](https://github.com/innocentemutabazi/gymgitexercisesolution/assets/159420918/06e9c217-45e1-4b25-9974-d07c531f8e07)
