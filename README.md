@@ -699,3 +699,87 @@ To https://github.com/innocentemutabazi/gitexercise2.git
 Branch 'main' set up to track remote branch 'main' from 'git-copy'.
 thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$`
 ```
+## Exercise 2
+```
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch -c ft/footer
+Switched to a new branch 'ft/footer'
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git add .
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git commit -m 'Created a footer page'
+[ft/footer 4b1e23a] Created a footer page
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 footer.html
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$     git push --set-upstream origin ft/footer
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 238 bytes | 238.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/innocentemutabazi/git-exercises/pull/new/ft/footer
+remote: 
+To https://github.com/innocentemutabazi/git-exercises.git
+ * [new branch]      ft/footer -> ft/footer
+Branch 'ft/footer' set up to track remote branch 'ft/footer' from 'origin'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git add .
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git commit -m 'Made more changes on the footer file'
+[ft/footer 4dcad78] Made more changes on the footer file
+ 1 file changed, 13 insertions(+)
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 449 bytes | 449.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/innocentemutabazi/git-exercises.git
+   4b1e23a..4dcad78  ft/footer -> ft/footer
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'git-copy/main'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch -c ft/squashing
+Switched to a new branch 'ft/squashing'
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git merge --squash ft/footer
+Updating fd58a6d..4dcad78
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+ create mode 100644 footer.html
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git add .
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git commit -m 'footer changes squashing'
+[ft/squashing e01b404] footer changes squashing
+ 1 file changed, 13 insertions(+)
+ create mode 100644 footer.html
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git push
+fatal: The current branch ft/squashing has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/squashing
+
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$     git push --set-upstream origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 452 bytes | 452.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/innocentemutabazi/git-exercises/pull/new/ft/squashing
+remote: 
+To https://github.com/innocentemutabazi/git-exercises.git
+ * [new branch]      ft/squashing -> ft/squashing
+Branch 'ft/squashing' set up to track remote branch 'ft/squashing' from 'origin'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$
+```
