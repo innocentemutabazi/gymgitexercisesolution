@@ -1,6 +1,7 @@
 
 #BUNDLE 1 Exercise 1
 
+```
 thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git init
 Initialized empty Git repository in /home/thegym/Desktop/GIT-EXERCISES/.git/
 thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git config --global init.defaultBranch main
@@ -64,5 +65,6 @@ thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git branch
 thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git branch -d test
 Deleted branch test (was 1ce3e8d).
 thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git branch
+```
 * dev
   main
