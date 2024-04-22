@@ -654,3 +654,48 @@ To https://github.com/innocentemutabazi/git-exercises.git
 Branch 'ft/home-page-redesign' set up to track remote branch 'ft/home-page-redesign' from 'origin'.
 thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$
 ```
+# BUNDLE 4
+## Exercise
+```
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git main checkout
+git: 'main' is not a git command. See 'git --help'.
+
+The most similar command is
+        mailinfo
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git remote add git-copy https://github.com/innocentemutabazi/gitexercise2.git
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git add .
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git commit -m 'made few changes on the homepage'
+[main fd58a6d] made few changes on the homepage
+ 1 file changed, 2 insertions(+)
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 343 bytes | 343.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/innocentemutabazi/git-exercises.git
+   6e16e43..fd58a6d  main -> main
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git add .
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git commit -m 'made few changes on the homepage'
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git push -u git-copy main
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (24/24), 3.17 KiB | 360.00 KiB/s, done.
+Total 24 (delta 13), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (13/13), done.
+To https://github.com/innocentemutabazi/gitexercise2.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'git-copy'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$`
+```
