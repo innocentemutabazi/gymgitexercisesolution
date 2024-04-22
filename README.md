@@ -359,4 +359,243 @@ To https://github.com/innocentemutabazi/git-exercises.git
    508baeb..335d6f1  main -> main
 thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$
 ```
+# BUNDLE 3
+## Exercise 1
+```
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch -c ft/team-page
+Switched to a new branch 'ft/team-page'
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git add .
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git commit -m 'Created a team page'
+[ft/team-page 970b806] Created a team page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 team.html
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git push
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$     git push --set-upstream origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 424 bytes | 424.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/innocentemutabazi/git-exercises/pull/new/ft/team-page
+remote: 
+To https://github.com/innocentemutabazi/git-exercises.git
+ * [new branch]      ft/team-page -> ft/team-page
+Branch 'ft/team-page' set up to track remote branch 'ft/team-page' from 'origin'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git checkout
+Your branch is up to date with 'origin/main'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch -c ft/contact-page
+Switched to a new branch 'ft/contact-page'
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch ft/team-page 
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git log 
+commit 970b806589aace00072832af4667a4b720c2cc37 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: innocentemutabazi <innocentemutabazi@gmail.com>
+Date:   Mon Apr 22 15:38:54 2024 +0200
+
+    Created a team page
+
+commit 335d6f13fe9a388c42860f6da4528576832f563a (origin/main, main, ft/contact-page)
+Merge: 508baeb 6286f4b
+Author: innocentemutabazi <innocentemutabazi@gmail.com>
+Date:   Mon Apr 22 15:21:42 2024 +0200
+
+    Resolved conflicts
+
+commit 508baeb2b906a70aded2b6b06c8eb048e3fe0340
+Author: innocentemutabazi <innocentemutabazi@gmail.com>
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch ft/contact-page 
+Switched to branch 'ft/contact-page'
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git cherry-pick 970b806589aace00072832af4667a4b720c2cc37
+[ft/contact-page 8f23fc5] Created a team page
+ Date: Mon Apr 22 15:38:54 2024 +0200
+ 1 file changed, 11 insertions(+)
+ create mode 100644 team.html
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git add .
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git commit -m 'Added changes to contact page'
+[ft/contact-page 9b833e3] Added changes to contact page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 contact.html
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$     git push --set-upstream origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 694 bytes | 347.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/innocentemutabazi/git-exercises/pull/new/ft/contact-page
+remote: 
+To https://github.com/innocentemutabazi/git-exercises.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+Branch 'ft/contact-page' set up to track remote branch 'ft/contact-page' from 'origin'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch ft/contact-page
+Already on 'ft/contact-page'
+Your branch is up to date with 'origin/ft/contact-page'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch -c ft/faq-page
+Switched to a new branch 'ft/faq-page'
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git add .
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git commit -m 'added a faq page'
+[ft/faq-page 4e8bdb9] added a faq page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$     git push --set-upstream origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 438 bytes | 438.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/innocentemutabazi/git-exercises/pull/new/ft/faq-page
+remote: 
+To https://github.com/innocentemutabazi/git-exercises.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+Branch 'ft/faq-page' set up to track remote branch 'ft/faq-page' from 'origin'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git push
+Everything up-to-date
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git log
+commit 4e8bdb921d4305dfaa21fc830bd85dc768a565fb (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: innocentemutabazi <innocentemutabazi@gmail.com>
+Date:   Mon Apr 22 16:03:09 2024 +0200
+
+    added a faq page
+
+commit 9b833e3c8ef36cc71311f883e060f85bce8bea9c (origin/ft/contact-page, ft/contact-page)
+Author: innocentemutabazi <innocentemutabazi@gmail.com>
+Date:   Mon Apr 22 15:58:25 2024 +0200
+
+    Added changes to contact page
+
+commit 8f23fc504eee2d1d75d307a5acdab450ba889273
+Author: innocentemutabazi <innocentemutabazi@gmail.com>
+Date:   Mon Apr 22 15:38:54 2024 +0200
+
+    Created a team page
+
+commit 335d6f13fe9a388c42860f6da4528576832f563a (origin/main, main)
+Merge: 508baeb 6286f4b
+Author: innocentemutabazi <innocentemutabazi@gmail.com>
+Date:   Mon Apr 22 15:21:42 2024 +0200
+
+    Resolved conflicts
+
+commit 508baeb2b906a70aded2b6b06c8eb048e3fe0340
+Author: innocentemutabazi <innocentemutabazi@gmail.com>
+Date:   Mon Apr 22 15:03:33 2024 +0200
+
+    updated the service file
+
+commit 6286f4bfd56472e498c2a1b7cfc760e8dfa43b2f (origin/ft/service-redesign, ft/service-redes
+ign)
+Author: innocentemutabazi <innocentemutabazi@gmail.com>
+Date:   Mon Apr 22 14:40:25 2024 +0200
+
+    New changes on the service.html page
+
+commit cc07f40d571769c84f0f5a9458d6d2f1212a8552
+Merge: 1ce3e8d c66d080
+Author: Ivy-Murage <108492757+IvyMurage@users.noreply.github.com>
+Date:   Mon Apr 22 14:25:48 2024 +0200
+
+    Merge pull request #1 from innocentemutabazi/ft/bundle-2
+    
+    Ft/bundle 2
+
+commit c66d080da9328e9120db339f0639960e09dd2b26 (origin/ft/bundle-2, ft/bundle-2)
+Author: innocentemutabazi <innocentemutabazi@gmail.com>
+:...skipping...
+:...skipping...
+:...skipping...
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git log
+commit 970b806589aace00072832af4667a4b720c2cc37 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: innocentemutabazi <innocentemutabazi@gmail.com>
+Date:   Mon Apr 22 15:38:54 2024 +0200
+
+    Created a team page
+
+commit 335d6f13fe9a388c42860f6da4528576832f563a (origin/main, main)
+Merge: 508baeb 6286f4b
+Author: innocentemutabazi <innocentemutabazi@gmail.com>
+Date:   Mon Apr 22 15:21:42 2024 +0200
+
+    Resolved conflicts
+
+commit 508baeb2b906a70aded2b6b06c8eb048e3fe0340
+Author: innocentemutabazi <innocentemutabazi@gmail.com>
+Date:   Mon Apr 22 15:03:33 2024 +0200
+
+    updated the service file
+
+commit 6286f4bfd56472e498c2a1b7cfc760e8dfa43b2f (origin/ft/service-redesign, ft/service-redesign)
+Author: innocentemutabazi <innocentemutabazi@gmail.com>
+Date:   Mon Apr 22 14:40:25 2024 +0200
+
+    New changes on the service.html page
+
+commit cc07f40d571769c84f0f5a9458d6d2f1212a8552
+Merge: 1ce3e8d c66d080
+Author: Ivy-Murage <108492757+IvyMurage@users.noreply.github.com>
+Date:   Mon Apr 22 14:25:48 2024 +0200
+
+    Merge pull request #1 from innocentemutabazi/ft/bundle-2
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch ft/faq-page
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git revert 970b806589aace00072832af4667a4b720c2cc37
+[ft/faq-page 66985af] Revert "Created a team page"
+ 1 file changed, 11 deletions(-)
+ delete mode 100644 team.html
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git status
+On branch ft/faq-page
+Your branch is ahead of 'origin/ft/faq-page' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 277 bytes | 277.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/innocentemutabazi/git-exercises.git
+   4e8bdb9..66985af  ft/faq-page -> ft/faq-page
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$
+```
 
