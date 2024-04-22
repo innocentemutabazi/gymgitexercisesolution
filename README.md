@@ -801,3 +801,46 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/innocentemutabazi/git-cafe-exercise.git
    d1d3f9c..913c7d9  main -> main
 ```
+
+# BUNDLE 6
+## Exercse 1
+```
+thegym@thegym-Precision-5530:~/Desktop/git-cafe-exercise$ git switch -c newfeature
+Switched to a new branch 'newfeature'
+thegym@thegym-Precision-5530:~/D
+thegym@thegym-Precision-5530:~/De
+thegym@thegym-Precision-5530:~/Desktop/git-cafe-exercise$ git status
+On branch newfeature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        menu.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+thegym@thegym-Precision-5530:~/Desktop/git-cafe-exercise$ git add .
+thegym@thegym-Precision-5530:~/Desktop/git-cafe-exercise$ git commit -m 'Added the menu'
+[newfeature 7e81e85] Added the menu
+ 1 file changed, 11 insertions(+)
+ create mode 100644 menu.html
+thegym@thegym-Precision-5530:~/Desktop/git-cafe-exercise$ git push
+fatal: The current branch newfeature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin newfeature
+
+thegym@thegym-Precision-5530:~/Desktop/git-cafe-exercise$     git push --set-upstream origin newfeature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 434 bytes | 434.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'newfeature' on GitHub by visiting:
+remote:      https://github.com/innocentemutabazi/git-cafe-exercise/pull/new/newfeature
+remote: 
+To https://github.com/innocentemutabazi/git-cafe-exercise.git
+ * [new branch]      newfeature -> newfeature
+Branch 'newfeature' set up to track remote branch 'newfeature' from 'origin'.
+thegym@thegym-Precision-5530:~/Desktop/git-cafe-exercise$
+```
