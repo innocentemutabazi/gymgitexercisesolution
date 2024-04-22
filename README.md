@@ -153,7 +153,7 @@ thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git status
 On branch dev
 nothing to commit, working tree clean
 ```
-#BUNDLE 2
+# BUNDLE 2
 ## Exercise 1
 
 ```
