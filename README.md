@@ -151,4 +151,67 @@ thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git reset --hard
 HEAD is now at 7e9ec1d Completed the second exercise BUNDLE 1
 thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git status
 On branch dev
-nothing to commit, working tree clean```
+nothing to commit, working tree clean
+```
+#BUNDLE 2
+## Exercise 1
+
+```
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch -c ft/bundle-2 
+Switched to a new branch 'ft/bundle-2'
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git add .
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git commit -commit 'Exercise 1 of Bundle 2'
+fatal: could not lookup commit ommit
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git -commit 'Exercise 1 of Bundle 
+> 
+> '
+unknown option: -commit
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git -commit 'Exercise 1 of Bundle'
+unknown option: -commit
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git -commit "Exercise 1 of Bundle"
+unknown option: -commit
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git commit -m "Exercise 1 of Bundle"
+[ft/bundle-2 c66d080] Exercise 1 of Bundle
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git push
+fatal: The current branch ft/bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bundle-2
+
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$     git push --set-upstream origin ft/bundle-2
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 832 bytes | 416.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+remote: 
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/innocentemutabazi/git-exercises/pull/new/ft/bundle-2
+remote: 
+To https://github.com/innocentemutabazi/git-exercises.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+Branch 'ft/bundle-2' set up to track remote branch 'ft/bundle-2' from 'origin'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$
+```
