@@ -1,5 +1,5 @@
-
-#BUNDLE 1 Exercise 1
+# BUNDLE 1
+## Exercise 1
 
 ```
 thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git init
@@ -65,6 +65,6 @@ thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git branch
 thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git branch -d test
 Deleted branch test (was 1ce3e8d).
 thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git branch
-```
 * dev
   main
+```
