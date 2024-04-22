@@ -598,4 +598,59 @@ To https://github.com/innocentemutabazi/git-exercises.git
    4e8bdb9..66985af  ft/faq-page -> ft/faq-page
 thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$
 ```
+## Exercise 2
+```
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch ft/faq-page
+Already on 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch -c ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git add .
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git commit -m 'Made some changes on the home page'
+[main 6e16e43] Made some changes on the home page
+ 1 file changed, 1 insertion(+)
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 345 bytes | 345.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/innocentemutabazi/git-exercises.git
+   335d6f1..6e16e43  main -> main
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git switch ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git add .
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git add .
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git commit -m 'made changes'
+[ft/home-page-redesign 2409e3e] made changes
+ 1 file changed, 1 insertion(+)
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$ git push
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
 
+    git push --set-upstream origin ft/home-page-redesign
+
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$     git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (14/14), 1.44 KiB | 295.00 KiB/s, done.
+Total 14 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/innocentemutabazi/git-exercises/pull/new/ft/home-page-redesign
+remote: 
+To https://github.com/innocentemutabazi/git-exercises.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+Branch 'ft/home-page-redesign' set up to track remote branch 'ft/home-page-redesign' from 'origin'.
+thegym@thegym-Precision-5530:~/Desktop/GIT-EXERCISES$
+```
